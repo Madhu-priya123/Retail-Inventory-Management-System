@@ -209,13 +209,4 @@ Password: admin123
 
 ---
 
-## 👨‍💻 Author
 
-**Divyanshu Kumar**
-💼 Full Stack Developer | Java + Spring Boot | React.js
-
----
-
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub and support the work!

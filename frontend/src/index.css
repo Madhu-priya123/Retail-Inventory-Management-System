@@ -1,0 +1,105 @@
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-color, #f8f9fa);
+    color: var(--text-color, #212529);
+    transition: all 0.3s ease;
+}
+
+:root {
+    --primary-color: #0d6efd;
+    --bg-color: #f8f9fa;
+    --sidebar-bg: #212529;
+    --card-bg: #ffffff;
+}
+
+[data-theme='dark'] {
+    --primary-color: #3d8bfd;
+    --bg-color: #121212;
+    --sidebar-bg: #000000;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+}
+
+[data-theme='ocean'] {
+    --primary-color: #008080;
+    --bg-color: #f0fdfa;
+    --sidebar-bg: #134e4a;
+    --card-bg: #ffffff;
+}
+
+[data-theme='sunset'] {
+    --primary-color: #f97316;
+    --bg-color: #fffaf5;
+    --sidebar-bg: #7c2d12;
+    --card-bg: #ffffff;
+}
+
+.card {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+}
+
+.bg-light {
+    background-color: var(--bg-color) !important;
+}
+
+.text-muted {
+    color: var(--text-color) !important;
+    opacity: 0.7;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar-custom {
+    background-color: var(--sidebar-bg) !important;
+    color: #ffffff !important;
+}
+
+.navbar-custom {
+    background-color: var(--card-bg) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+@media (min-width: 768px) {
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+.list-group-item.active {
+    background-color: rgba(13, 110, 253, 0.15) !important;
+    color: #0d6efd !important;
+    border-left: 4px solid #0d6efd !important;
+    border-radius: 0 !important;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.text-primary {
+    color: #0d6efd !important;
+}
